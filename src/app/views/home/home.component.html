@@ -236,7 +236,7 @@
 
                             <div class="others-options">
                                 <div class="d-flex align-items-center">
-                                    <div class="option-item">
+                                    <!-- <div class="option-item">
                                         <i class="search-btn bx bx-search-alt"></i>
                                         <i class="close-btn bx bx-x"></i>
                                         <div class="search-overlay search-popup">
@@ -250,7 +250,7 @@
                                                 </form>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="option-item">
                                         <a href="tel:+7042791249" class="call-button">
@@ -267,107 +267,107 @@
         </div>
         <!-- End Navbar Area -->
 
-        <!-- Start Main Slider Area -->
-        <div class="home-sliders owl-carousel owl-theme" >
-            <div class="home-item item-bg1">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="slider-content">
-                                <b>ABC Company System</b>
-                                <h1>Impactful Supply Chain Management</h1>
-                                <p>ABC System empowers a global network of over 150,000 businesses in 180 countries to engage with customers and grow their revenue</p>
-
-                                <div class="slider-btn">
-                                    <a href="#" class="default-btn">
-                                        Learn More
-                                        <i class='bx bx-right-arrow-alt'></i>
-                                        <span></span>
-                                    </a>
-
-                              
+       <!-- Start Main Slider Area -->
+        <owl-carousel-o [options]="customOptionHomeSlider" class="home-sliders">
+            <ng-template carouselSlide>
+                <div class="home-item item-bg1">
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="container">
+                                <div class="slider-content">
+                                    <b>ABC Company System</b>
+                                    <h1>Impactful Supply Chain Management</h1>
+                                    <p>ABC System empowers a global network of over 150,000 businesses in 180 countries to
+                                        engage with customers and grow their revenue</p>
+                                    <div class="slider-btn">
+                                        <a href="#" class="default-btn">
+                                            Learn More
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="shape">
+                        <img src="assets/img/slider/shape.png" alt="image">
+                    </div>
                 </div>
-
-                <div class="shape">
-                    <img src="assets/img/slider/shape.png" alt="image">
-                </div>
-            </div>
-
-            <div class="home-item item-bg2">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="slider-content">
-                                <b>Lorem Ipsum Dummy</b>
-                                <h1>Manage Everything With a Single Click</h1>
-                                <p>ABC System empowers a global network of over 150,000 businesses in 180 countries to engage with customers and grow their revenue</p>
-
-                                <div class="slider-btn">
-                                    <a href="#" class="default-btn">
-                                        Try Jilva Free
-                                        <i class='bx bx-right-arrow-alt'></i>
-                                        <span></span>
-                                    </a>
-
-                                    <!-- <a href="https://www.youtube.com/watch?v=CWYeggMHA1U" class="video-btn popup-youtube">
-                                        <i class='bx bx-play'></i>
-                                        How Its Work
-                                    </a> -->
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="home-item item-bg2">
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="container">
+                                <div class="slider-content">
+                                    <b>Lorem Ipsum Dummy</b>
+                                    <h1>Manage Everything With a Single Click</h1>
+                                    <p>ABC System empowers a global network of over 150,000 businesses in 180 countries to
+                                        engage with customers and grow their revenue</p>
+                                    <div class="slider-btn">
+                                        <a href="#" class="default-btn">
+                                            Try Jilva Free
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="shape">
+                        <img src="assets/img/slider/shape.png" alt="image">
+                    </div>
                 </div>
-
-                <div class="shape">
-                    <img src="assets/img/slider/shape.png" alt="image">
-                </div>
-            </div>
-          
-        </div>
-        <!-- End Main Slider Area -->
-
-        <!-- Start Partner Area -->
-        <div class="partner-area">
-            <div class="container-fluid">
-                <div class="partner-slider owl-carousel owl-theme">
+            </ng-template>
+        </owl-carousel-o>
+    <!-- End Main Slider Area -->
+    <!-- Start Partner Area -->
+    <div class="partner-area">
+        <div class="container-fluid">
+            <owl-carousel-o [options]="optionsSecondSlider" class="partner-slider">
+                <ng-template carouselSlide>
                     <div class="partner-item">
                         <a href="#" target="_blank"><img src="assets/img/partner/1.png" alt="image"></a>
                         <a href="#" target="_blank"><img src="assets/img/partner/1.png" alt="image"></a>
                     </div>
-
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="partner-item">
                         <a href="#" target="_blank"><img src="assets/img/partner/2.png" alt="image"></a>
                         <a href="#" target="_blank"><img src="assets/img/partner/2.png" alt="image"></a>
                     </div>
-
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="partner-item">
                         <a href="#" target="_blank"><img src="assets/img/partner/3.png" alt="image"></a>
                         <a href="#" target="_blank"><img src="assets/img/partner/3.png" alt="image"></a>
                     </div>
-
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="partner-item">
                         <a href="#" target="_blank"><img src="assets/img/partner/4.png" alt="image"></a>
                         <a href="#" target="_blank"><img src="assets/img/partner/4.png" alt="image"></a>
                     </div>
-
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="partner-item">
                         <a href="#" target="_blank"><img src="assets/img/partner/5.png" alt="image"></a>
                         <a href="#" target="_blank"><img src="assets/img/partner/5.png" alt="image"></a>
                     </div>
-
+                </ng-template>
+                <ng-template carouselSlide>
                     <div class="partner-item">
                         <a href="#" target="_blank"><img src="assets/img/partner/6.png" alt="image"></a>
                         <a href="#" target="_blank"><img src="assets/img/partner/6.png" alt="image"></a>
                     </div>
-                </div>
-            </div>
+                </ng-template>
+
+            </owl-carousel-o>
         </div>
-        <!-- End Partner Area -->
+    </div>
+    <!-- End Partner Area -->
 
         <!-- Start Management Area -->
         <section class="management-area ptb-100">
@@ -375,166 +375,94 @@
                 <div class="section-title">
                     <span>ABC Management</span>
                     <h2>Powerful Better Together</h2>
-                    <p>Integrate our APIs and Plugins with popular platforms and start your logistics processing with ABC System. They’re powerful alone</p>
+                    <p>Integrate our APIs and Plugins with popular platforms and start your logistics processing with ABC
+                        System. They’re powerful alone</p>
                 </div>
-
-                <div class="management-slider owl-carousel owl-theme">
-                    <div class="management-item">
-                        <div class="image">
-                            <img src="assets/img/icons/management/1.png" alt="image">
+        
+                <owl-carousel-o [options]="optionsThreeSlider" class="management-slider">
+                    <ng-template carouselSlide>
+                        <div class="management-item">
+                            <div class="image">
+                                <img src="assets/img/icons/management/1.png" alt="image">
+                            </div>
+                            <h3>Contractor</h3>
+                            <p>Everything you need to organize track, and build better relationships</p>
+                            <ul class="management-list">
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Contact Insights
+                                </li>
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Deals Over Business
+                                </li>
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Tasks Regarding Test
+                                </li>
+                            </ul>
+                            <a href="#" class="management-btn">
+                                <i class='bx bx-right-arrow-alt'></i>
+                                Learn More
+                            </a>
                         </div>
-                        <h3>Contractor</h3>
-                        <p>Everything you need to organize track, and build better relationships</p>
-                        <ul class="management-list">
-                            <li>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="management-item">
+                            <div class="image">
+                                <img src="assets/img/icons/management/2.png" alt="image">
+                            </div>
+                            <h3>Leasing Companies</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                            <ul class="management-list">
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Contact Insights
+                                </li>
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Deals Over Business
+                                </li>
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Tasks Regarding Test
+                                </li>
+                            </ul>
+                            <a href="#" class="management-btn">
                                 <i class='bx bx-right-arrow-alt'></i>
-                                Contact Insights
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Deals Over Business
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Tasks Regarding Test
-                            </li>
-                        </ul>
-                        <a href="#" class="management-btn">
-                            <i class='bx bx-right-arrow-alt'></i>
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div class="management-item">
-                        <div class="image">
-                            <img src="assets/img/icons/management/2.png" alt="image">
+                                Learn More
+                            </a>
                         </div>
-                        <h3>Leasing Companies</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-                        <ul class="management-list">
-                            <li>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="management-item">
+                            <div class="image">
+                                <img src="assets/img/icons/management/3.png" alt="image">
+                            </div>
+                            <h3>Equipments</h3>
+                            <p>Everything you need to organize track, and build better relationships</p>
+                            <ul class="management-list">
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Contact Insights
+                                </li>
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Deals Over Business
+                                </li>
+                                <li>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                    Tasks Regarding Test
+                                </li>
+                            </ul>
+                            <a href="#" class="management-btn">
                                 <i class='bx bx-right-arrow-alt'></i>
-                                Contact Insights
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Deals Over Business
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Tasks Regarding Test
-                            </li>
-                        </ul>
-                        <a href="#" class="management-btn">
-                            <i class='bx bx-right-arrow-alt'></i>
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div class="management-item">
-                        <div class="image">
-                            <img src="assets/img/icons/management/3.png" alt="image">
+                                Learn More
+                            </a>
                         </div>
-                        <h3>Equipments</h3>
-                        <p>Everything you need to organize track, and build better relationships</p>
-                        <ul class="management-list">
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Contact Insights
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Deals Over Business
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Tasks Regarding Test
-                            </li>
-                        </ul>
-                        <a href="#" class="management-btn">
-                            <i class='bx bx-right-arrow-alt'></i>
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div class="management-item">
-                        <div class="image">
-                            <img src="assets/img/icons/management/1.png" alt="image">
-                        </div>
-                        <h3>Manufacturers</h3>
-                        <p>Everything you need to organize track, and build better relationships</p>
-                        <ul class="management-list">
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Contact Insights
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Deals Over Business
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Tasks Regarding Test
-                            </li>
-                        </ul>
-                        <a href="#" class="management-btn">
-                            <i class='bx bx-right-arrow-alt'></i>
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div class="management-item">
-                        <div class="image">
-                            <img src="assets/img/icons/management/2.png" alt="image">
-                        </div>
-                        <h3>Contractor Hub</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-                        <ul class="management-list">
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Contact Insights
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Deals Over Business
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Tasks Regarding Test
-                            </li>
-                        </ul>
-                        <a href="#" class="management-btn">
-                            <i class='bx bx-right-arrow-alt'></i>
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div class="management-item">
-                        <div class="image">
-                            <img src="assets/img/icons/management/3.png" alt="image">
-                        </div>
-                        <h3>Dealers</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-                        <ul class="management-list">
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Contact Insights
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Deals Over Business
-                            </li>
-                            <li>
-                                <i class='bx bx-right-arrow-alt'></i>
-                                Tasks Regarding Test
-                            </li>
-                        </ul>
-                        <a href="#" class="management-btn">
-                            <i class='bx bx-right-arrow-alt'></i>
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+                    </ng-template>
+                </owl-carousel-o>
+        
             </div>
             <div class="management-shape">
                 <img src="assets/img/shape/1.png" alt="image">

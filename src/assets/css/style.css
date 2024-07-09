@@ -8825,6 +8825,16 @@ Copy Right Area CSS
   margin-left: 0;
 }
 
+
+.owl-theme .owl-nav {
+  display: none!important;
+}
+
+.owl-theme .owl-dots {
+  display: none!important;
+}
+
+
 /*================================================
 Go Top CSS
 =================================================*/
