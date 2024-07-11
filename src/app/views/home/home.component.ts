@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -6,8 +6,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-
+export class HomeComponent implements OnInit {
+ title:"EWW" | undefined;
+ 
   customOptionHomeSlider: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -59,4 +60,11 @@ export class HomeComponent {
     nav: true
   };
 
+  ngOnInit(): void {
+  
+  
+   
+  
+  
+}
 }
