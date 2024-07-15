@@ -15,16 +15,30 @@ const routes: Routes = [
 
   {
     path:'aboutus',
-    component : AboutComponent,
+      component:AboutComponent
   },
+
   {
     path:'solutions',
-    component : SolutionsComponent,
+    component:SolutionsComponent
   },
+
   {
     path:'construction',
-    component : ConstructionComponent,
-  }
+    component:ConstructionComponent
+  },
+
+  
+  //{
+   // path:'aboutus',
+  //  loadChildren: () => import('./views/about/about.module').then(m => m.AboutModule)
+ // },
+
+ // {
+ //   path:'construction',
+ //   loadChildren: () => import('./views/construction/construction.module').then(m => m.ConstructionModule)
+ // }
+
 
 
 ];
