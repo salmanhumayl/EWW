@@ -10,6 +10,8 @@ import { EquipmentComponent } from './views/equipment/equipment.component';
 import { LeasingComponent } from './views/leasing/leasing.component';
 import { DealersComponent } from './views/dealers/dealers.component';
 import { ManufacturersComponent } from './views/manufacturers/manufacturers.component';
+import { PolicyComponent } from './views/policy/policy.component';
+import { FaqComponent } from './views/faq/faq.component';
 
 const routes: Routes = [
 
@@ -63,6 +65,16 @@ const routes: Routes = [
   {
     path:'contactus',
     component:ContactComponent
+  },
+
+  {
+    path:'policy',
+    component:PolicyComponent
+  },
+
+  {
+    path:'faq',
+    component:FaqComponent
   },
 
  

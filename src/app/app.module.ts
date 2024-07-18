@@ -18,6 +18,9 @@ import { LeasingComponent } from './views/leasing/leasing.component';
 import { DealersComponent } from './views/dealers/dealers.component';
 import { ManufacturersComponent } from './views/manufacturers/manufacturers.component';
 import { TeamComponent } from './views/team/team.component';
+import { PolicyComponent } from './views/policy/policy.component';
+import { FaqComponent } from './views/faq/faq.component';
+import { TermsconditionsComponent } from './views/termsconditions/termsconditions.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { TeamComponent } from './views/team/team.component';
     LeasingComponent,
     DealersComponent,
     ManufacturersComponent,
-    TeamComponent
+    TeamComponent,
+    PolicyComponent,
+    FaqComponent,
+    TermsconditionsComponent
    
    
   ],
