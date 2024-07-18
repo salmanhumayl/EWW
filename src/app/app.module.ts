@@ -12,6 +12,12 @@ import { HeaderComponent } from './views/header/header.component';
 import { SolutionsComponent } from './views/solutions/solutions.component';
 import { ConstructionComponent } from './views/construction/construction.component';
 import { AboutComponent } from './views/about/about.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { EquipmentComponent } from './views/equipment/equipment.component';
+import { LeasingComponent } from './views/leasing/leasing.component';
+import { DealersComponent } from './views/dealers/dealers.component';
+import { ManufacturersComponent } from './views/manufacturers/manufacturers.component';
+import { TeamComponent } from './views/team/team.component';
 
 
 @NgModule({
@@ -22,7 +28,13 @@ import { AboutComponent } from './views/about/about.component';
     HomeComponent,
     SolutionsComponent,
     ConstructionComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent,
+    EquipmentComponent,
+    LeasingComponent,
+    DealersComponent,
+    ManufacturersComponent,
+    TeamComponent
    
    
   ],

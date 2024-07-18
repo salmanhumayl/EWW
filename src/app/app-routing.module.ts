@@ -4,6 +4,12 @@ import { HomeComponent } from './views/home/home.component';
 import { AboutComponent } from './views/about/about.component';
 import { SolutionsComponent } from './views/solutions/solutions.component';
 import { ConstructionComponent } from './views/construction/construction.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { TeamComponent } from './views/team/team.component';
+import { EquipmentComponent } from './views/equipment/equipment.component';
+import { LeasingComponent } from './views/leasing/leasing.component';
+import { DealersComponent } from './views/dealers/dealers.component';
+import { ManufacturersComponent } from './views/manufacturers/manufacturers.component';
 
 const routes: Routes = [
 
@@ -27,6 +33,39 @@ const routes: Routes = [
     path:'construction',
     component:ConstructionComponent
   },
+
+
+  {
+    path:'equipment',
+    component:EquipmentComponent
+  },
+
+  {
+    path:'leasing',
+    component:LeasingComponent
+  },
+
+  
+  {
+    path:'dealers',
+    component:DealersComponent
+  },
+
+  {
+    path:'manufacturers',
+    component:ManufacturersComponent
+  },
+  {
+    path:'team',
+    component:TeamComponent
+  },
+
+  {
+    path:'contactus',
+    component:ContactComponent
+  },
+
+ 
 
   
   //{
