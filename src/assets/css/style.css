@@ -82,6 +82,7 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -96,7 +97,8 @@ a {
   color: #0d1820;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #0865f8;
   text-decoration: none;
 }
@@ -162,14 +164,36 @@ img {
   padding-bottom: 50px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #0d1820;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
-.h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child, h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+.h1:last-child,
+.h2:last-child,
+.h3:last-child,
+.h4:last-child,
+.h5:last-child,
+.h6:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
   margin-bottom: 0;
 }
 
@@ -373,18 +397,19 @@ Preloader Area CSS
   background-color: #ffffff;
   margin: 0 auto;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-          animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
   position: absolute;
   left: 0;
   right: 0;
   top: 42%;
   -webkit-transform: translateY(-42%);
-          transform: translateY(-42%);
+  transform: translateY(-42%);
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-.preloader::before, .preloader::after {
+.preloader::before,
+.preloader::after {
   content: '';
   position: absolute;
   left: 0;
@@ -406,7 +431,8 @@ Preloader Area CSS
   visibility: hidden;
 }
 
-.preloader.preloader-deactivate::after, .preloader.preloader-deactivate::before {
+.preloader.preloader-deactivate::after,
+.preloader.preloader-deactivate::before {
   width: 0;
 }
 
@@ -418,30 +444,34 @@ Preloader Area CSS
 @-webkit-keyframes sk-rotateplane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
+
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
+
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
 
 @keyframes sk-rotateplane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
+
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
   }
+
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
 
@@ -601,7 +631,7 @@ Top Header Area CSS
   float: unset;
   border: none;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 0;
   display: block;
   margin-top: 12px !important;
@@ -610,7 +640,7 @@ Top Header Area CSS
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
 }
 
 .map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item {
@@ -638,12 +668,14 @@ Top Header Area CSS
   text-transform: uppercase;
 }
 
-.map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item:hover, .map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item:focus {
+.map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item:hover,
+.map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item:focus {
   background-color: transparent !important;
   outline: 0;
 }
 
-.map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item:active, .map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item.active {
+.map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item:active,
+.map-dropdown .option-item .language-switcher .dropdown-menu .dropdown-item.active {
   color: #0d1820;
   background-color: transparent;
 }
@@ -652,7 +684,7 @@ Top Header Area CSS
   opacity: 1;
   visibility: visible;
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .map-dropdown .option-item .list {
@@ -733,7 +765,9 @@ Navbar Area CSS
   margin-right: 14px;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item a:hover, .main-navbar .navbar .navbar-nav .nav-item a:focus, .main-navbar .navbar .navbar-nav .nav-item a.active {
+.main-navbar .navbar .navbar-nav .nav-item a:hover,
+.main-navbar .navbar .navbar-nav .nav-item a:focus,
+.main-navbar .navbar .navbar-nav .nav-item a.active {
   color: #0865f8;
   position: relative;
   -webkit-transition: 0.6s;
@@ -757,7 +791,8 @@ Navbar Area CSS
   margin-left: 0;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item:hover a, .main-navbar .navbar .navbar-nav .nav-item.active a {
+.main-navbar .navbar .navbar-nav .nav-item:hover a,
+.main-navbar .navbar .navbar-nav .nav-item.active a {
   color: #0865f8;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -765,7 +800,7 @@ Navbar Area CSS
 
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   background: #ffffff;
   position: absolute;
   border: none;
@@ -803,12 +838,16 @@ Navbar Area CSS
   font-weight: 400;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #0865f8;
   letter-spacing: 1px;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:hover::before, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:focus::before, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a.active::before {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:hover::before,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:focus::before,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a.active::before {
   display: none;
 }
 
@@ -829,7 +868,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -844,7 +885,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -859,7 +902,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -874,7 +919,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -889,7 +936,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -904,7 +953,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -1044,10 +1095,10 @@ Navbar Area CSS
   width: 100%;
   z-index: 999;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   background-color: #ffffff !important;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
 .navbar-area.is-sticky .main-navbar {
@@ -1058,7 +1109,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.navbar-area.is-sticky .main-navbar .navbar .navbar-nav .nav-item a:hover, .navbar-area.is-sticky .main-navbar .navbar .navbar-nav .nav-item a:focus, .navbar-area.is-sticky .main-navbar .navbar .navbar-nav .nav-item a.active {
+.navbar-area.is-sticky .main-navbar .navbar .navbar-nav .nav-item a:hover,
+.navbar-area.is-sticky .main-navbar .navbar .navbar-nav .nav-item a:focus,
+.navbar-area.is-sticky .main-navbar .navbar .navbar-nav .nav-item a.active {
   color: #0865f8;
 }
 
@@ -1100,11 +1153,15 @@ Navbar Area CSS
   color: #ffffff;
 }
 
-.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:hover, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:focus, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a.active {
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:hover,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:focus,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a.active {
   color: #ffffff;
 }
 
-.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:hover i, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:focus i, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a.active i {
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:hover i,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a:focus i,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item a.active i {
   color: #ffffff;
 }
 
@@ -1112,15 +1169,18 @@ Navbar Area CSS
   color: #ffffff;
 }
 
-.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item:hover a, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item.active a {
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item:hover a,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item.active a {
   color: #0865f8;
 }
 
-.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item:hover a i, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item.active a i {
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item:hover a i,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item.active a i {
   color: #0d1820;
 }
 
-.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item:hover i, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item.active i {
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item:hover i,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item.active i {
   color: #0865f8;
 }
 
@@ -1128,7 +1188,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.navbar-style-two .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
+.navbar-area.navbar-style-two .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #0865f8;
 }
 
@@ -1178,10 +1240,10 @@ Navbar Area CSS
   width: 100%;
   z-index: 999;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   background-color: #ffffff !important;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
 .navbar-area.navbar-style-two.is-sticky.navbar-style-two {
@@ -1205,7 +1267,9 @@ Navbar Area CSS
   color: #0d1820;
 }
 
-.navbar-area.navbar-style-two.is-sticky.navbar-style-two .navbar .navbar-nav .nav-item a:hover, .navbar-area.navbar-style-two.is-sticky.navbar-style-two .navbar .navbar-nav .nav-item a:focus, .navbar-area.navbar-style-two.is-sticky.navbar-style-two .navbar .navbar-nav .nav-item a.active {
+.navbar-area.navbar-style-two.is-sticky.navbar-style-two .navbar .navbar-nav .nav-item a:hover,
+.navbar-area.navbar-style-two.is-sticky.navbar-style-two .navbar .navbar-nav .nav-item a:focus,
+.navbar-area.navbar-style-two.is-sticky.navbar-style-two .navbar .navbar-nav .nav-item a.active {
   color: #0865f8;
 }
 
@@ -1242,7 +1306,7 @@ Navbar Area CSS
   z-index: 2;
   padding: 20px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   margin-top: 0;
 }
 
@@ -1283,7 +1347,8 @@ Navbar Area CSS
   padding: 0;
 }
 
-.search-overlay.search-popup .search-form .search-button:hover, .search-overlay.search-popup .search-form .search-button:focus {
+.search-overlay.search-popup .search-form .search-button:hover,
+.search-overlay.search-popup .search-form .search-button:focus {
   color: #0865f8;
 }
 
@@ -1295,30 +1360,38 @@ Navbar Area CSS
   .main-responsive-nav {
     display: block;
   }
+
   .main-responsive-nav .main-responsive-menu {
     position: relative;
   }
+
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul {
     font-size: 15px;
   }
+
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul li a.active {
     color: #0865f8;
   }
+
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul li a i {
     display: none;
   }
+
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul li li a {
     font-size: 14px;
   }
+
   .main-responsive-nav .main-responsive-menu.mean-container .navbar-nav {
     overflow-y: scroll;
     height: 336px;
     -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
   }
+
   .main-responsive-nav .mean-container a.meanmenu-reveal {
     color: #0d1820;
   }
+
   .main-responsive-nav .mean-container a.meanmenu-reveal span {
     background: #0d1820;
     position: relative;
@@ -1326,25 +1399,31 @@ Navbar Area CSS
     margin-top: -5.8px;
     border-radius: 5px;
   }
+
   .main-responsive-nav .mean-container .others-options {
     display: none;
   }
+
   .main-responsive-nav .logo {
     position: relative;
     width: 50%;
     z-index: 999;
   }
+
   .main-responsive-nav .logo .logo-1 {
     display: inline-block;
   }
+
   .main-responsive-nav .logo .logo-2 {
     display: none;
   }
+
   .navbar-area {
     background-color: #ffffff;
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .main-navbar {
     display: none;
   }
@@ -1379,7 +1458,7 @@ Main Slider Area CSS
 }
 
 .home-sliders .home-item.item-bg1 {
-  background-image: url(https://img.freepik.com/free-photo/civil-engineer-construction-worker-manager-holding-digital-tablet-blueprints-talking-planing-about-construction-site-cooperation-teamwork-concept_640221-156.jpg?t=st=1719904737~exp=1719908337~hmac=1062777eeb7edd175115a630cd113610d3641ffe694008467e741326e176ce31&w=1380);
+  background-image: url(../../assets/img/00.22.46_d7dc8984.jpg);
 }
 
 .home-sliders .home-item.item-bg2 {
@@ -1446,7 +1525,7 @@ Main Slider Area CSS
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 5px;
   opacity: 1;
@@ -1516,7 +1595,7 @@ Main Slider Area CSS
   left: 120px;
   bottom: 10%;
   -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
+  transform: translateY(-10%);
   color: #ffffff;
   font-size: 20px;
   margin: 0;
@@ -1533,7 +1612,7 @@ Main Slider Area CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .home-sliders.owl-theme .owl-nav [class*=owl-].owl-prev::before {
@@ -1542,7 +1621,7 @@ Main Slider Area CSS
   left: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 14px;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -1571,7 +1650,7 @@ Main Slider Area CSS
   right: 2px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 14px;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -1589,7 +1668,7 @@ Partner Area CSS
 .partner-area {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding-top: 70px;
   padding-bottom: 30px;
 }
@@ -1602,7 +1681,7 @@ Partner Area CSS
 .partner-area.bg-color {
   background-color: #fff8f8;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .partner-slider .partner-item {
@@ -1772,13 +1851,14 @@ Management Area CSS
   border: none;
 }
 
-.management-slider.owl-theme .owl-dots .owl-dot:hover span, .management-slider.owl-theme .owl-dots .owl-dot.active span {
+.management-slider.owl-theme .owl-dots .owl-dot:hover span,
+.management-slider.owl-theme .owl-dots .owl-dot.active span {
   width: 20px;
   border-radius: 10px;
   background-color: #0865f8;
 }
 
-.management-slider.owl-theme .owl-nav.disabled + .owl-dots {
+.management-slider.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 30px;
 }
 
@@ -1940,7 +2020,7 @@ Features Area CSS
   background-color: #ffffff;
   padding: 50px;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   max-width: 1400px;
   margin: auto;
 }
@@ -1988,7 +2068,7 @@ Features Area CSS
 
 .features-content:hover {
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   background-color: #ffffff;
 }
 
@@ -2210,7 +2290,7 @@ Why Choose Us Area CSS
   right: 0;
   bottom: 10%;
   -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
+  transform: translateY(-10%);
   z-index: -1;
 }
 
@@ -2305,7 +2385,7 @@ Why Choose Us Area CSS
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   opacity: 0;
   visibility: hidden;
 }
@@ -2314,7 +2394,7 @@ Why Choose Us Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 20px;
   right: 20px;
   margin: 0 auto;
@@ -2340,14 +2420,14 @@ Why Choose Us Area CSS
 
 .single-choose-item:hover img {
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .single-choose-item:hover .content {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .single-choose-item:hover .title {
@@ -2440,14 +2520,14 @@ Accompany Area CSS
   color: #0d1820;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   border: 1px solid #ffffff;
 }
 
 .accompany-list-tab .tab_content {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 45px;
   border-radius: 2px;
 }
@@ -2675,7 +2755,7 @@ Trial Area CSS
   color: #e0edff;
   border: none;
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   border-radius: 0;
@@ -2735,7 +2815,7 @@ Trial Area CSS
 .trial-form .trial-form-content form .form-group .nice-select .list {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
-          box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
+  box-shadow: 0 0 29px 0 rgba(102, 102, 102, 0.1);
   border-radius: 0;
   margin-top: 0;
   width: 100%;
@@ -2821,7 +2901,7 @@ Awards Area CSS
 .awards-items .image img {
   border-radius: 5px 5px 0 0;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
 }
 
 .awards-items .content {
@@ -3058,7 +3138,7 @@ Assistant Area CSS
   line-height: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   text-align: center;
   color: #f12711;
   font-size: 20px;
@@ -3126,7 +3206,7 @@ Pricing Area CSS
   line-height: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   text-align: center;
   color: #f12711;
   font-size: 20px;
@@ -3160,7 +3240,7 @@ Pricing Area CSS
   display: block;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   color: #0d1820;
   padding: 14px 30px;
   position: relative;
@@ -3190,7 +3270,7 @@ Pricing Area CSS
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   border: 1px solid #ffffff;
   position: relative;
   padding-top: 30px;
@@ -3415,7 +3495,7 @@ Testimonial Area CSS
   left: 0;
   top: 20%;
   -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  transform: translateY(-20%);
   color: #ffffff;
   font-size: 20px;
   margin: 0;
@@ -3432,7 +3512,7 @@ Testimonial Area CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .testimonial-slider.owl-theme .owl-nav [class*=owl-].owl-prev::before {
@@ -3441,7 +3521,7 @@ Testimonial Area CSS
   left: 25px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 14px;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -3470,7 +3550,7 @@ Testimonial Area CSS
   right: 5px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 14px;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -3511,7 +3591,7 @@ Blog Area CSS
   left: -12px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 5px;
   padding: 5px 25px;
   -webkit-transition: 0.6s;
@@ -3598,7 +3678,7 @@ Blog Area CSS
 .blog-item:hover .content {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   border: 1px solid #ffffff;
   border-top: none;
 }
@@ -3627,7 +3707,7 @@ Blog Area CSS
   left: auto;
   top: 0;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
 }
 
 .blog-item.left:hover .image .btn {
@@ -3781,7 +3861,7 @@ Banner Area CSS
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 5px;
   opacity: 1;
@@ -3871,7 +3951,7 @@ Top Features Area CSS
 .top-features-area .container {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 40px;
 }
 
@@ -4038,7 +4118,7 @@ Dedicated Area CSS
   margin: auto;
   top: 70%;
   -webkit-transform: translateY(-70%);
-          transform: translateY(-70%);
+  transform: translateY(-70%);
   background-color: #0865f8;
   color: #ffffff;
   width: 250px;
@@ -4056,7 +4136,7 @@ Dedicated Area CSS
   margin: auto;
   top: 55%;
   -webkit-transform: translateY(-55%);
-          transform: translateY(-55%);
+  transform: translateY(-55%);
   font-size: 16px;
   font-weight: 400;
   width: 200px;
@@ -4176,7 +4256,7 @@ Support Area CSS
 .support-area .col-lg-6.bg-color {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding-top: 118px;
   padding-bottom: 118px;
   padding-left: 35px;
@@ -4488,7 +4568,7 @@ Conversational Area CSS
   line-height: 30px;
   background-color: #3b596f;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   text-align: center;
   color: #ffffff;
   font-size: 20px;
@@ -4563,7 +4643,7 @@ Others Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 120px;
@@ -4615,7 +4695,7 @@ Client Area CSS
 
 .client-area .container {
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   background-color: #ffffff;
   padding: 50px 50px 0;
 }
@@ -4699,7 +4779,7 @@ Client Area CSS
   left: 0;
   bottom: 28%;
   -webkit-transform: translateY(-28%);
-          transform: translateY(-28%);
+  transform: translateY(-28%);
   color: #000000;
   font-size: 20px;
   margin: 0;
@@ -4716,7 +4796,7 @@ Client Area CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .client-slider.owl-theme .owl-nav [class*=owl-].owl-prev::before {
@@ -4725,7 +4805,7 @@ Client Area CSS
   left: 25px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 15px;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -4755,7 +4835,7 @@ Client Area CSS
   right: 5px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 15px;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
@@ -4943,7 +5023,7 @@ Banner Area Three CSS
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 5px;
   opacity: 1;
@@ -5066,7 +5146,7 @@ Top Management Area CSS
   background-color: #ffffff;
   padding: 45px 30px;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   margin: 10px;
   position: relative;
   z-index: 1;
@@ -5226,13 +5306,14 @@ Top Management Area CSS
   border: none;
 }
 
-.top-management-slider.owl-theme .owl-dots .owl-dot:hover span, .top-management-slider.owl-theme .owl-dots .owl-dot.active span {
+.top-management-slider.owl-theme .owl-dots .owl-dot:hover span,
+.top-management-slider.owl-theme .owl-dots .owl-dot.active span {
   width: 20px;
   border-radius: 10px;
   background-color: #f12711;
 }
 
-.top-management-slider.owl-theme .owl-nav.disabled + .owl-dots {
+.top-management-slider.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 30px;
 }
 
@@ -5252,7 +5333,7 @@ Experience Area CSS
   right: -55px;
   top: 120%;
   -webkit-transform: translateY(-120%);
-          transform: translateY(-120%);
+  transform: translateY(-120%);
   background-color: #0865f8;
   color: #ffffff;
   width: 350px;
@@ -5270,7 +5351,7 @@ Experience Area CSS
   margin: auto;
   top: 80%;
   -webkit-transform: translateY(-80%);
-          transform: translateY(-80%);
+  transform: translateY(-80%);
   font-size: 16px;
   font-weight: 400;
   width: 170px;
@@ -5455,7 +5536,7 @@ Lead Area CSS
 .lead-item {
   position: relative;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
   padding: 70px 40px;
   padding-left: 0;
@@ -5712,7 +5793,7 @@ Feedback Area CSS
 .feedback-slider .feedback-item {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   margin: 10px;
   padding: 30px;
 }
@@ -5853,7 +5934,7 @@ Page Title Area CSS
   list-style-type: none;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   display: inline-block;
   padding: 8px 20px;
   border-radius: 30px;
@@ -5916,7 +5997,7 @@ Team Area CSS
 
 .team-item .image .social li {
   -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  transform: translateY(30px);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   opacity: 0;
@@ -5934,7 +6015,7 @@ Team Area CSS
   height: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   text-align: center;
   position: relative;
   font-size: 16px;
@@ -5950,7 +6031,7 @@ Team Area CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
 }
@@ -5962,37 +6043,37 @@ Team Area CSS
 
 .team-item .image .social li:nth-child(1) {
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .team-item .image .social li:nth-child(2) {
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .team-item .image .social li:nth-child(3) {
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .team-item .image .social li:nth-child(4) {
   -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .team-item .image .content {
   position: absolute;
   background: #0865f8;
   -webkit-box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.07);
-          box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.07);
   width: 100%;
   bottom: 0;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-transform: perspective(300px) rotateX(90deg);
-          transform: perspective(300px) rotateX(90deg);
+  transform: perspective(300px) rotateX(90deg);
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
   text-align: center;
   padding: 35px 30px 30px;
   opacity: 0;
@@ -6014,17 +6095,17 @@ Team Area CSS
 
 .team-item:hover .image .social li {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
 .team-item:hover .image .content {
   -webkit-transform: perspective(300px) rotateX(0deg);
-          transform: perspective(300px) rotateX(0deg);
+  transform: perspective(300px) rotateX(0deg);
   opacity: 1;
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 30px 30px 0 0;
 }
 
@@ -6096,7 +6177,7 @@ Creative Area CSS
   position: absolute;
   bottom: 0;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-size: 16px;
   color: #0d1820;
   font-weight: 500;
@@ -6162,7 +6243,7 @@ Details Area CSS
 .details-desc .details-info .single-info-box {
   -ms-flex: 0 0 20%;
   -webkit-box-flex: 0;
-          flex: 0 0 20%;
+  flex: 0 0 20%;
   max-width: 20%;
   padding-left: 15px;
   padding-right: 15px;
@@ -6199,7 +6280,7 @@ Details Area CSS
 .details-desc .details-info .single-info-box .social li a:hover {
   color: #0865f8;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .details-desc .details-info .single-info-box .default-btn {
@@ -6234,7 +6315,7 @@ Details Area CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: 0;
   padding: 0;
   -webkit-transition: 0.6s;
@@ -6271,7 +6352,7 @@ Software Area CSS
   margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 30px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -6309,7 +6390,7 @@ Software Area CSS
 
 .software-item:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .software-item:hover .read-btn {
@@ -6409,7 +6490,7 @@ Features Details Area CSS
 .features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider .features-details-item {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 35px;
   margin: 10px;
   position: relative;
@@ -6463,13 +6544,14 @@ Features Details Area CSS
   border: none;
 }
 
-.features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider.owl-theme .owl-dots .owl-dot:hover span, .features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider.owl-theme .owl-dots .owl-dot.active span {
+.features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider.owl-theme .owl-dots .owl-dot:hover span,
+.features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider.owl-theme .owl-dots .owl-dot.active span {
   width: 20px;
   border-radius: 10px;
   background-color: #0865f8;
 }
 
-.features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider.owl-theme .owl-nav.disabled + .owl-dots {
+.features-details-tab .tab_content .tabs_item .features-details-box .features-details-slider.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 20px;
 }
 
@@ -6520,7 +6602,7 @@ Solution Area CSS
   padding: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
 }
 
 .solution-item .content h3 {
@@ -6549,7 +6631,7 @@ Solution Area CSS
 
 .solution-item:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .solution-item:hover .content .read-btn {
@@ -6563,7 +6645,7 @@ Faq Area CSS
 .faq-accordion-content {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   padding: 40px;
 }
 
@@ -6576,7 +6658,7 @@ Faq Area CSS
 .faq-accordion-content .accordion .accordion-item {
   display: block;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   background: #ffffff;
   margin-bottom: 10px;
   border: none;
@@ -6615,7 +6697,7 @@ Faq Area CSS
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 25px;
 }
 
@@ -6625,7 +6707,7 @@ Faq Area CSS
 
 .faq-accordion-content .accordion .accordion-title.active i {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .faq-accordion-content .accordion .accordion-content {
@@ -6656,7 +6738,7 @@ Faq Area CSS
   background-color: #ffffff;
   border: none;
   -webkit-box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2) !important;
-          box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2) !important;
+  box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2) !important;
   height: 60px;
   font-size: 15px;
 }
@@ -6670,7 +6752,7 @@ Faq Area CSS
 .faq-contact-form form .btn {
   margin-top: 8px;
   -webkit-box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
-          box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
+  box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
 }
 
 .faq-contact-form form .help-block ul {
@@ -6690,7 +6772,8 @@ Faq Area CSS
   margin-bottom: 0;
 }
 
-.faq-contact-form form #msgSubmit.text-danger, .faq-contact-form form #msgSubmit.text-success {
+.faq-contact-form form #msgSubmit.text-danger,
+.faq-contact-form form #msgSubmit.text-success {
   margin-top: 8px;
   font-size: 22px;
   font-weight: 300;
@@ -6717,7 +6800,7 @@ Contact Area CSS
 .contact-inner {
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
-          box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
+  box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
   padding: 50px 30px;
 }
 
@@ -6732,7 +6815,8 @@ Contact Area CSS
   margin-right: -7px;
 }
 
-.contact-form form .row .col-lg-6, .contact-form form .row .col-lg-12 {
+.contact-form form .row .col-lg-6,
+.contact-form form .row .col-lg-12 {
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -6752,7 +6836,7 @@ Contact Area CSS
   -webkit-transition: 0.6s;
   transition: 0.6s;
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   font-size: 14px;
   font-weight: 400;
 }
@@ -6896,7 +6980,7 @@ Contact Area CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
 }
@@ -7063,7 +7147,7 @@ Coming Soon Area CSS
   height: 56px;
   border: none;
   -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
-          box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 5px rgba(255, 255, 255, 0.3);
   border-radius: 40px;
   padding: 15px 25px;
   outline: 0 !important;
@@ -7087,7 +7171,8 @@ Coming Soon Area CSS
   font-weight: 600;
 }
 
-.coming-soon-content form .submit-btn:hover, .coming-soon-content form .submit-btn:focus {
+.coming-soon-content form .submit-btn:hover,
+.coming-soon-content form .submit-btn:focus {
   background-color: #0865f8;
 }
 
@@ -7099,7 +7184,7 @@ Coming Soon Area CSS
   height: 220px;
   color: #0d1820;
   -webkit-box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
   margin: 0 10px;
   padding-top: 35px;
   font-size: 70px;
@@ -7119,7 +7204,7 @@ Sign In CSS
 .sign-in-form {
   background: #ffffff;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   padding: 40px;
   border-radius: 5px;
   max-width: 600px;
@@ -7158,7 +7243,7 @@ Sign In CSS
   border-color: #0865f8;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .sign-in-form form .form-control::-webkit-input-placeholder {
@@ -7244,7 +7329,7 @@ Sign Up CSS
 .signup-form {
   background: #ffffff;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   padding: 40px;
   border-radius: 5px;
   max-width: 600px;
@@ -7275,7 +7360,7 @@ Sign Up CSS
   border-color: #0865f8;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .signup-form form .form-control::-webkit-input-placeholder {
@@ -7450,7 +7535,7 @@ Customer Area CSS
 
 .customer-item:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /*================================================
@@ -7459,7 +7544,7 @@ Compliance Area CSS
 .compliance-item {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 35px 40px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -7498,7 +7583,7 @@ Compliance Area CSS
 
 .compliance-item:hover {
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .compliance-item:hover .compliance-btn {
@@ -7518,7 +7603,7 @@ Functionality Area CSS
 .functionality-area .container {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 45px;
 }
 
@@ -7609,7 +7694,7 @@ Blog Details Area CSS
   display: inline-block;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 16px;
   position: absolute;
   left: 0;
@@ -7690,7 +7775,7 @@ Blog Details Area CSS
   color: #ffffff;
   background-color: #0865f8;
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
   border: 1px solid #0865f8;
 }
 
@@ -7785,7 +7870,7 @@ Blog Details Area CSS
   color: #ffffff;
   background-color: #0865f8;
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
   border: 1px solid #0865f8;
 }
 
@@ -7850,7 +7935,8 @@ Blog Details Area CSS
   margin-bottom: 0;
 }
 
-blockquote, .blockquote {
+blockquote,
+.blockquote {
   overflow: hidden;
   background-color: #0865f8;
   padding: 35px !important;
@@ -7860,18 +7946,21 @@ blockquote, .blockquote {
   margin-bottom: 30px;
 }
 
-blockquote p, .blockquote p {
+blockquote p,
+.blockquote p {
   color: #ffffff !important;
   line-height: 1.6;
   font-weight: 700;
   font-size: 22px !important;
 }
 
-blockquote cite, .blockquote cite {
+blockquote cite,
+.blockquote cite {
   color: #ffffff;
 }
 
-blockquote::after, .blockquote::after {
+blockquote::after,
+.blockquote::after {
   display: none;
 }
 
@@ -7990,7 +8079,8 @@ blockquote::after, .blockquote::after {
   font-size: 30px;
 }
 
-.comments-area ol, .comments-area ul {
+.comments-area ol,
+.comments-area ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -8091,7 +8181,7 @@ blockquote::after, .blockquote::after {
   margin-top: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   padding: 30px;
 }
 
@@ -8127,7 +8217,19 @@ blockquote::after, .blockquote::after {
   margin-bottom: 5px;
 }
 
-.comments-area .comment-respond input[type="date"], .comments-area .comment-respond input[type="time"], .comments-area .comment-respond input[type="datetime-local"], .comments-area .comment-respond input[type="week"], .comments-area .comment-respond input[type="month"], .comments-area .comment-respond input[type="text"], .comments-area .comment-respond input[type="email"], .comments-area .comment-respond input[type="url"], .comments-area .comment-respond input[type="password"], .comments-area .comment-respond input[type="search"], .comments-area .comment-respond input[type="tel"], .comments-area .comment-respond input[type="number"], .comments-area .comment-respond textarea {
+.comments-area .comment-respond input[type="date"],
+.comments-area .comment-respond input[type="time"],
+.comments-area .comment-respond input[type="datetime-local"],
+.comments-area .comment-respond input[type="week"],
+.comments-area .comment-respond input[type="month"],
+.comments-area .comment-respond input[type="text"],
+.comments-area .comment-respond input[type="email"],
+.comments-area .comment-respond input[type="url"],
+.comments-area .comment-respond input[type="password"],
+.comments-area .comment-respond input[type="search"],
+.comments-area .comment-respond input[type="tel"],
+.comments-area .comment-respond input[type="number"],
+.comments-area .comment-respond textarea {
   display: block;
   width: 100%;
   background-color: #ffffff;
@@ -8138,7 +8240,19 @@ blockquote::after, .blockquote::after {
   transition: 0.6s;
 }
 
-.comments-area .comment-respond input[type="date"]:focus, .comments-area .comment-respond input[type="time"]:focus, .comments-area .comment-respond input[type="datetime-local"]:focus, .comments-area .comment-respond input[type="week"]:focus, .comments-area .comment-respond input[type="month"]:focus, .comments-area .comment-respond input[type="text"]:focus, .comments-area .comment-respond input[type="email"]:focus, .comments-area .comment-respond input[type="url"]:focus, .comments-area .comment-respond input[type="password"]:focus, .comments-area .comment-respond input[type="search"]:focus, .comments-area .comment-respond input[type="tel"]:focus, .comments-area .comment-respond input[type="number"]:focus, .comments-area .comment-respond textarea:focus {
+.comments-area .comment-respond input[type="date"]:focus,
+.comments-area .comment-respond input[type="time"]:focus,
+.comments-area .comment-respond input[type="datetime-local"]:focus,
+.comments-area .comment-respond input[type="week"]:focus,
+.comments-area .comment-respond input[type="month"]:focus,
+.comments-area .comment-respond input[type="text"]:focus,
+.comments-area .comment-respond input[type="email"]:focus,
+.comments-area .comment-respond input[type="url"]:focus,
+.comments-area .comment-respond input[type="password"]:focus,
+.comments-area .comment-respond input[type="search"]:focus,
+.comments-area .comment-respond input[type="tel"]:focus,
+.comments-area .comment-respond input[type="number"]:focus,
+.comments-area .comment-respond textarea:focus {
   border-color: #f12711;
 }
 
@@ -8206,7 +8320,8 @@ blockquote::after, .blockquote::after {
   font-size: 15px;
 }
 
-.comments-area .comment-respond .form-submit input:hover, .comments-area .comment-respond .form-submit input:focus {
+.comments-area .comment-respond .form-submit input:hover,
+.comments-area .comment-respond .form-submit input:focus {
   color: #ffffff;
   background-color: #0d1820;
 }
@@ -8284,7 +8399,7 @@ Sidebar Widget Area CSS
   color: #ffffff;
   background-color: #0865f8;
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
   border: 1px solid #0865f8;
 }
 
@@ -8322,7 +8437,7 @@ Sidebar Widget Area CSS
 
 .widget-area .widget_search {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
-          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
   background-color: #ffffff;
   padding: 15px;
 }
@@ -8551,7 +8666,8 @@ Sidebar Widget Area CSS
   margin-right: 4px;
 }
 
-.widget-area .tagcloud a:hover, .widget-area .tagcloud a:focus {
+.widget-area .tagcloud a:hover,
+.widget-area .tagcloud a:focus {
   color: #ffffff;
   background-color: #0865f8;
   border-color: #0865f8;
@@ -8574,16 +8690,18 @@ Pagination Area CSS
   line-height: 48px;
   color: #0d1820;
   -webkit-box-shadow: 0 2px 10px 0 #d8dde6;
-          box-shadow: 0 2px 10px 0 #d8dde6;
+  box-shadow: 0 2px 10px 0 #d8dde6;
   font-size: 18px;
   font-weight: 700;
 }
 
-.pagination-area .page-numbers.current, .pagination-area .page-numbers:hover, .pagination-area .page-numbers:focus {
+.pagination-area .page-numbers.current,
+.pagination-area .page-numbers:hover,
+.pagination-area .page-numbers:focus {
   background: #0865f8;
   color: #ffffff;
   -webkit-box-shadow: 0 2px 10px 0 #d8dde6;
-          box-shadow: 0 2px 10px 0 #d8dde6;
+  box-shadow: 0 2px 10px 0 #d8dde6;
 }
 
 /*================================================
@@ -8827,11 +8945,11 @@ Copy Right Area CSS
 
 
 .owl-theme .owl-nav {
-  display: none!important;
+  display: none !important;
 }
 
 .owl-theme .owl-dots {
-  display: none!important;
+  display: none !important;
 }
 
 
@@ -8861,7 +8979,7 @@ Go Top CSS
 .go-top.active {
   top: 98%;
   -webkit-transform: translateY(-98%);
-          transform: translateY(-98%);
+  transform: translateY(-98%);
   opacity: 1;
   visibility: visible;
 }
@@ -8870,7 +8988,7 @@ Go Top CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -8901,22 +9019,26 @@ Go Top CSS
   border-radius: 50%;
 }
 
-.go-top:hover, .go-top:focus {
+.go-top:hover,
+.go-top:focus {
   color: #ffffff;
 }
 
-.go-top:hover::before, .go-top:focus::before {
+.go-top:hover::before,
+.go-top:focus::before {
   opacity: 1;
   visibility: visible;
 }
 
-.go-top:hover i:first-child, .go-top:focus i:first-child {
+.go-top:hover i:first-child,
+.go-top:focus i:first-child {
   opacity: 0;
   top: 0;
   visibility: hidden;
 }
 
-.go-top:hover i:last-child, .go-top:focus i:last-child {
+.go-top:hover i:last-child,
+.go-top:focus i:last-child {
   opacity: 1;
   visibility: visible;
   top: 50%;
@@ -8957,46 +9079,67 @@ Buy Now Btn
 @-webkit-keyframes tada {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-  10%, 20% {
+
+  10%,
+  20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-  30%, 50%, 70%, 90% {
+
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-  40%, 60%, 80% {
+
+  40%,
+  60%,
+  80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
+
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes tada {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-  10%, 20% {
+
+  10%,
+  20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-  30%, 50%, 70%, 90% {
+
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-  40%, 60%, 80% {
+
+  40%,
+  60%,
+  80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
+
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
+
 /*# sourceMappingURL=style.css.map */

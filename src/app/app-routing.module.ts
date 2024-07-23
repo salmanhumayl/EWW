@@ -12,6 +12,7 @@ import { DealersComponent } from './views/dealers/dealers.component';
 import { ManufacturersComponent } from './views/manufacturers/manufacturers.component';
 import { PolicyComponent } from './views/policy/policy.component';
 import { FaqComponent } from './views/faq/faq.component';
+import { TermsconditionsComponent } from './views/termsconditions/termsconditions.component';
 
 const routes: Routes = [
 
@@ -78,6 +79,10 @@ const routes: Routes = [
   },
 
  
+  {
+    path:'terms',
+    component:TermsconditionsComponent
+  }
 
   
   //{
